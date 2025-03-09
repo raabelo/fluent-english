@@ -16,12 +16,14 @@ export default function Home() {
                     draggable={false}
                 />
                 <div>
-                    <Tag className="text-4xl">Olá gabs linda</Tag>
+                    <Tag className="text-4xl">mon cœur est déjà à toi</Tag>
                 </div>
             </main>
             <section>
                 <article className="min-h-[50svh]">
-                    <p>teste</p>
+                    <p className="p-20">
+                        {`Site developed to study Next.js, practice French, and comme cadeau d'anniversaire de la femme la plus incroyable que j'ai rencontrée récemment 🫶🏽`}
+                    </p>
                     <ConveyorBelt />
                 </article>
             </section>
