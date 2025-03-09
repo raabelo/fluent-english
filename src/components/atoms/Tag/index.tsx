@@ -17,7 +17,7 @@ export default function Tag({ children: text, color = "red", ...props }: TagProp
     return (
         <p
             {...props}
-            className={`p-2 rounded-md text-white font-bold ${colorMap[color]} ${props.className}`}
+            className={`p-2 rounded-md w-fit text-white font-bold ${colorMap[color]} ${props.className}`}
         >
             {text}
         </p>
