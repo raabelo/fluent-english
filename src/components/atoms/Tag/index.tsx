@@ -1,7 +1,8 @@
 import { IColor } from "@/types/IColor";
+import { ReactNode } from "react";
 
 interface ITag {
-    children: string;
+    children: ReactNode;
     color?: IColor;
 }
 
@@ -13,7 +14,7 @@ const colorMap: Record<IColor, string> = {
     orange: "bg-fluent-orange",
 };
 
-export default function Tag({ children: text, color = "red", ...props }: TagProps) {
+export default function Tag({ children: text, color = "blue", ...props }: TagProps) {
     return (
         <p
             {...props}
