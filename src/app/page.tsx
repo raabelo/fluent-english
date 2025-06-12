@@ -32,7 +32,7 @@ export default function Home() {
                         <strong>lembrança</strong> — mesmo quando eu estiver longe.
                         <br />
                         Você é <strong>vista</strong>, <strong>sentida</strong> e{" "}
-                        <strong>amanda</strong>.
+                        <strong>amada</strong>.
                         <br />
                         <span className="italic">
                             Com carinho, saudade e um pouco de <s>safadeza</s>.
