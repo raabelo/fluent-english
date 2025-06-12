@@ -38,6 +38,7 @@ export default function Home() {
                             Com carinho, saudade e um pouco de <s>safadeza</s>.
                         </span>
                         <center className="pt-2">EU TE AMO, MEU BENZINHO</center>
+                        <center className="pt-2 italic">Quer namorar comigo?</center>
                     </p>
                 </article>
 
