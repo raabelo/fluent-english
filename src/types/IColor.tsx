@@ -1,1 +1,1 @@
-export type IColor = "red" | "blue" | "orange";
+export type FluentColor = "red" | "blue" | "orange";

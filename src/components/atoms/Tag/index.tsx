@@ -1,14 +1,14 @@
-import { IColor } from "@/types/IColor";
+import { FluentColor } from "@/types/IColor";
 import { ReactNode } from "react";
 
-interface ITag {
+interface Tag {
     children: ReactNode;
-    color?: IColor;
+    color?: FluentColor;
 }
 
-type TagProps = ITag & React.HTMLAttributes<HTMLParagraphElement>;
+type TagProps = Tag & React.HTMLAttributes<HTMLParagraphElement>;
 
-const colorMap: Record<IColor, string> = {
+const colorMap: Record<FluentColor, string> = {
     red: "bg-fluent-red",
     blue: "bg-fluent-blue",
     orange: "bg-fluent-orange",
