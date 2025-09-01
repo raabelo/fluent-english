@@ -1,4 +1,5 @@
-import { FluentColor } from "@/types/IColor";
+import { FluentColor } from "@/types/FluentColor";
+import { getFluentClassColor } from "@/utils/functions/getFluentClassColor";
 import { ReactNode } from "react";
 
 interface Tag {
@@ -8,17 +9,13 @@ interface Tag {
 
 type TagProps = Tag & React.HTMLAttributes<HTMLParagraphElement>;
 
-const colorMap: Record<FluentColor, string> = {
-    red: "bg-fluent-red",
-    blue: "bg-fluent-blue",
-    orange: "bg-fluent-orange",
-};
-
 export default function Tag({ children: text, color = "blue", ...props }: TagProps) {
     return (
         <p
             {...props}
-            className={`p-2 rounded-md w-fit text-white font-bold ${colorMap[color]} ${props.className}`}
+            className={`p-2 rounded-md w-fit text-white font-bold ${getFluentClassColor(color)} ${
+                props.className
+            }`}
         >
             {text}
         </p>
