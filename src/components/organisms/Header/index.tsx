@@ -1,3 +1,4 @@
+import HeaderLink from "@/components/atoms/HeaderLink";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -19,12 +20,16 @@ export default function Header() {
             />
             <div className="text-white flex flex-row gap-20">
                 {sections.map((section) => (
-                    <span key={section}>{section}</span>
+                    <HeaderLink key={section} label={section} />
                 ))}
             </div>
-            <div className="text-white">
-                <FontAwesomeIcon icon={faInstagram} />
-                <FontAwesomeIcon icon={faWhatsapp} />
+            <div className="text-white text-lg flex flex-row gap-4">
+                <HeaderLink>
+                    <FontAwesomeIcon icon={faInstagram} />
+                </HeaderLink>
+                <HeaderLink>
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                </HeaderLink>
             </div>
         </div>
     );

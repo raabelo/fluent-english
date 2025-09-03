@@ -16,7 +16,7 @@
     --font-sans: var(--font-dosis);
     --font-mono: var(--font-dosis);
 
-    --animate-marquee: marquee 60s linear infinite;
+    --animate-marquee: marquee 120s linear infinite;
 }
 
 @media (prefers-color-scheme: dark) {
